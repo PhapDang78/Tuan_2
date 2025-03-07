@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".QuanLyFragment">
+
+    <!-- Tiêu đề -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hệ thống \n Quản lý Thư viện"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="16dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Nhân viên -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nhân viên"
+        android:textSize="16sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/edtNhanVien"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="48dp"
+            android:text="Nguyen Van A"
+            android:background="@drawable/edittext_background"
+            android:padding="12dp"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/btnDoiNhanVien"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="Đổi"
+            android:backgroundTint="@color/blue"
+            android:textColor="@android:color/white"
+            android:paddingHorizontal="16dp"/>
+    </LinearLayout>
+
+    <!-- Danh sách sách -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Danh sách sách"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_background"
+        android:padding="8dp"
+        android:layout_marginTop="8dp">
+
+        <CheckBox
+            android:id="@+id/checkSach1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sách 01"
+            android:checked="true"
+            android:background="@drawable/edittext_background" />
+
+        <CheckBox
+            android:id="@+id/checkSach2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sách 02"
+            android:checked="true"
+            android:background="@drawable/edittext_background"/>
+    </LinearLayout>
+
+    <!-- Nút Thêm -->
+    <Button
+        android:id="@+id/btnThem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thêm"
+        android:backgroundTint="@color/blue"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>
